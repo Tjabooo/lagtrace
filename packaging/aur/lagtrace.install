@@ -1,0 +1,4 @@
+post_install() {
+  echo "lagtrace reads click times from /dev/input and clicks through /dev/uinput:"
+  echo "  sudo usermod -aG input \$USER   (then log out and in), then run: lagtrace doctor"
+}

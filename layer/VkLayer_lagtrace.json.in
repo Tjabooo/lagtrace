@@ -1,0 +1,16 @@
+{
+    "file_format_version": "1.0.0",
+    "layer": {
+        "name": "VK_LAYER_LAGTRACE_latency",
+        "type": "GLOBAL",
+        "library_path": "@LIB@",
+        "api_version": "1.4.0",
+        "implementation_version": "1",
+        "description": "lagtrace: click-to-photon latency, measured in software",
+        "functions": {
+            "vkNegotiateLoaderLayerInterfaceVersion": "vkNegotiateLoaderLayerInterfaceVersion"
+        },
+        "enable_environment": { "LAGTRACE": "1" },
+        "disable_environment": { "DISABLE_LAGTRACE": "1" }
+    }
+}

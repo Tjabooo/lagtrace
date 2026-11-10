@@ -1,0 +1,3 @@
+#!/bin/sh
+# lagtrace CLI launcher (installed by `make install`)
+exec python3 -c 'import sys; sys.path.insert(0, sys.argv.pop(1)); from lagtrace.cli import main; sys.exit(main(sys.argv[1:]))' "@PYDIR@" "$@"
