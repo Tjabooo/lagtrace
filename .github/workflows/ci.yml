@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Install build dependencies
         run: pacman -Syu --noconfirm --needed base-devel git python sdl3 vulkan-headers vulkan-icd-loader
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       - name: Build (warnings are errors)
         run: make CFLAGS="-O2 -Werror"
       - name: Unit tests
